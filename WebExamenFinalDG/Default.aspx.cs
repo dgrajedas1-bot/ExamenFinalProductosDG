@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.Globalization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using EntidadesDG;
-using NegocioDG;
+using CapaEntidadesDG;
+using CapaNegocioDG;
 
 namespace WebExamenFinalDG
 {
@@ -126,6 +126,7 @@ namespace WebExamenFinalDG
             {
                 gvInventarioDG.DataSource = mobjNegocioDG.FncListarDG();
                 gvInventarioDG.DataBind();
+                lblContadorDG.Text = gvInventarioDG.Rows.Count == 1 ? "1 producto" : gvInventarioDG.Rows.Count + " productos";
                 if (gvInventarioDG.HeaderRow != null)
                 {
                     gvInventarioDG.HeaderRow.TableSection = TableRowSection.TableHeader;
@@ -135,6 +136,7 @@ namespace WebExamenFinalDG
             {
                 gvInventarioDG.DataSource = null;
                 gvInventarioDG.DataBind();
+                lblContadorDG.Text = "Sin conexión";
                 ProMostrarMensajeDG("No se pudo conectar a la base de datos. Revise la cadena 'cnnExamenDG' en Web.config. Detalle: " + lexcErrorDG.Message, false);
             }
         }

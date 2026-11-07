@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A2B3C4D-1111-4A11-9A11-0000000000E1}</ProjectGuid>
+    <ProjectGuid>{1A2B3C4D-3333-4A33-9A33-0000000000B3}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>EntidadesDG</RootNamespace>
-    <AssemblyName>EntidadesDG</AssemblyName>
+    <RootNamespace>CapaNegocioDG</RootNamespace>
+    <AssemblyName>CapaNegocioDG</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -18,25 +18,34 @@
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DocumentationFile>bin\Debug\EntidadesDG.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\CapaNegocioDG.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
-    <DocumentationFile>bin\Release\EntidadesDG.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\CapaNegocioDG.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsProductoDG.cs" />
+    <Compile Include="clsProductoNegocioDG.cs" />
+    <Compile Include="clsResultadoDG.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CapaEntidadesDG\CapaEntidadesDG.csproj">
+      <Project>{1A2B3C4D-1111-4A11-9A11-0000000000E1}</Project>
+      <Name>CapaEntidadesDG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaDatosDG\CapaDatosDG.csproj">
+      <Project>{1A2B3C4D-2222-4A22-9A22-0000000000D2}</Project>
+      <Name>CapaDatosDG</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

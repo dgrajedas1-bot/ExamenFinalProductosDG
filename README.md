@@ -1,4 +1,4 @@
-# Examen Final Programación II – Tema II: Sistema de Productos (DG)
+﻿# Examen Final Programación II – Tema II: Sistema de Productos (DG)
 
 **Alumna:** Daniela Paola Grajeda Sandoval · **Carné:** 0900-25-15929 · **Sección:** A
 **Tecnología:** ASP.NET Web Forms (.aspx + code-behind + Site.Master) · .NET Framework 4.8 · Bootstrap 5 (local) · SQL Server Express (ADO.NET)
@@ -15,13 +15,20 @@
 ## Estructura (capas)
 | Proyecto | Contenido |
 |---|---|
-| `EntidadesDG` | `clsProductoDG` |
-| `DatosDG` | `clsConexionDG`, `clsProductoDatosDG` (SQL parametrizado) |
-| `NegocioDG` | `clsProductoNegocioDG`, `clsResultadoDG` (reglas y mensajes) |
-| `WebExamenFinalDG` | `Site.Master`, `Default.aspx`, `About.aspx`, `Contact.aspx` |
+| `CapaEntidadesDG` | `clsProductoDG` |
+| `CapaDatosDG` | `clsConexionDG`, `clsProductoDatosDG` (SQL parametrizado) |
+| `CapaNegocioDG` | `clsProductoNegocioDG`, `clsResultadoDG` (reglas y mensajes) |
+| `WebExamenFinalDG` (capa de presentación) | `Site.Master`, `Default.aspx`, `About.aspx`, `Contact.aspx` |
 | `BaseDatosDG` | `scrExamenFinalProductosDG.sql` |
 
-Todo el código propio tiene sufijo **DG** y comentarios XML (`///`). No usa paquetes NuGet ni CodeDom.
+Todos los archivos están guardados en UTF-8 con BOM y el sitio usa `fileEncoding="utf-8"`, para que las tildes se vean bien. Todo el código propio tiene sufijo **DG** y comentarios XML (`///`). No usa paquetes NuGet ni CodeDom.
+
+## Actualizar si ya tenías la versión anterior
+- **Si clonaste con Git:** cierra la solución, ejecuta **Git → Extraer (Pull)** o `git pull` y vuelve a abrir `ExamenFinalProductos_DanielaGrajedaDG.sln`. Si Visual Studio muestra los proyectos viejos (`EntidadesDG`, `DatosDG`, `NegocioDG`) como no disponibles, borra las carpetas viejas que hayan quedado vacías o con `bin`/`obj`.
+- **Si usas el ZIP:** extráelo en una **carpeta nueva**, cierra la solución anterior y abre la nueva.
+- **La base de datos existente sirve tal cual**; no hay que recrearla. Si cambiaste `Data Source` en `Web.config`, vuelve a poner tu servidor.
+- Opcional, solo para que el producto de ejemplo lleve tilde en una BD ya creada:
+  `UPDATE dbo.tblProductoDG SET NombreDG = N'Tablet Gráfica' WHERE CodigoDG = N'PRD-003' AND NombreDG = N'Tablet Grafica';`
 
 ## Pasos en la máquina virtual (Visual Studio 2022)
 1. **Requisito:** en el Visual Studio Installer, carga de trabajo **ASP.NET y desarrollo web**, con el componente *.NET Framework 4.8 targeting pack*.

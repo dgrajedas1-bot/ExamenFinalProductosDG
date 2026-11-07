@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Web.UI;
 
 namespace WebExamenFinalDG
@@ -16,7 +16,7 @@ namespace WebExamenFinalDG
         /// <param name="e">Argumentos del evento.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblNombreDG.Text = Server.HtmlEncode(clsConfiguracionAlumnoDG.NombreDG.ToUpperInvariant());
+            lblNombreDG.Text = Server.HtmlEncode(clsConfiguracionAlumnoDG.NombreDG);
             lblCarneDG.Text = Server.HtmlEncode(clsConfiguracionAlumnoDG.CarneDG);
             lblSeccionDG.Text = Server.HtmlEncode(clsConfiguracionAlumnoDG.SeccionDG);
             lblCursoDG.Text = Server.HtmlEncode(clsConfiguracionAlumnoDG.CursoDG);

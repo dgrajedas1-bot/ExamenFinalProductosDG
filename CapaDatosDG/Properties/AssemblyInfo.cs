@@ -1,9 +1,9 @@
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("DatosDG")]
-[assembly: AssemblyDescription("Examen Final Programacion II - Daniela Grajeda")]
-[assembly: AssemblyCompany("Universidad Mariano Galvez de Guatemala")]
+[assembly: AssemblyTitle("CapaDatosDG")]
+[assembly: AssemblyDescription("Examen Final Programación II - Daniela Grajeda")]
+[assembly: AssemblyCompany("Universidad Mariano Gálvez de Guatemala")]
 [assembly: AssemblyProduct("ExamenFinalProductosDG")]
 [assembly: AssemblyCopyright("Daniela Paola Grajeda Sandoval 2026")]
 [assembly: ComVisible(false)]

@@ -1,7 +1,7 @@
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data.SqlClient;
 
-namespace DatosDG
+namespace CapaDatosDG
 {
     /// <summary>
     /// Clase encargada de construir la conexion hacia SQL Server

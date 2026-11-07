@@ -1,4 +1,4 @@
-namespace NegocioDG
+﻿namespace CapaNegocioDG
 {
     /// <summary>
     /// Resultado de una operacion de negocio con mensaje amigable para el usuario.

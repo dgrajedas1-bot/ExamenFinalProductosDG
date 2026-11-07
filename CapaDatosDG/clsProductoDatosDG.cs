@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using EntidadesDG;
+using CapaEntidadesDG;
 
-namespace DatosDG
+namespace CapaDatosDG
 {
     /// <summary>
     /// Capa de acceso a datos para la tabla dbo.tblProductoDG.

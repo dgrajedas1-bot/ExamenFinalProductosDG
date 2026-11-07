@@ -1,13 +1,13 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntidadesDG", "EntidadesDG\EntidadesDG.csproj", "{1A2B3C4D-1111-4A11-9A11-0000000000E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidadesDG", "CapaEntidadesDG\CapaEntidadesDG.csproj", "{1A2B3C4D-1111-4A11-9A11-0000000000E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatosDG", "DatosDG\DatosDG.csproj", "{1A2B3C4D-2222-4A22-9A22-0000000000D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatosDG", "CapaDatosDG\CapaDatosDG.csproj", "{1A2B3C4D-2222-4A22-9A22-0000000000D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegocioDG", "NegocioDG\NegocioDG.csproj", "{1A2B3C4D-3333-4A33-9A33-0000000000B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocioDG", "CapaNegocioDG\CapaNegocioDG.csproj", "{1A2B3C4D-3333-4A33-9A33-0000000000B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebExamenFinalDG", "WebExamenFinalDG\WebExamenFinalDG.csproj", "{1A2B3C4D-4444-4A44-9A44-0000000000A4}"
 EndProject

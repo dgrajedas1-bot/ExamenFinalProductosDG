@@ -1,7 +1,7 @@
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace EntidadesDG
+namespace CapaEntidadesDG
 {
     /// <summary>
     /// Entidad que representa un producto del inventario.

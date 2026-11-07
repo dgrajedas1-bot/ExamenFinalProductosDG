@@ -1,5 +1,5 @@
-/* =========================================================
-   Examen Final Programacion II - Tema II
+﻿/* =========================================================
+   Examen Final Programación II - Tema II
    Autora: Daniela Paola Grajeda Sandoval (sufijo DG)
    Script NO destructivo: solo crea lo que no existe.
    ========================================================= */
@@ -30,7 +30,7 @@ IF NOT EXISTS (SELECT 1 FROM dbo.tblProductoDG WHERE CodigoDG = N'PRD-001')
 IF NOT EXISTS (SELECT 1 FROM dbo.tblProductoDG WHERE CodigoDG = N'PRD-002')
     INSERT INTO dbo.tblProductoDG (CodigoDG, NombreDG, PrecioDG, StockDG) VALUES (N'PRD-002', N'Proyector LED', 299.99, 10);
 IF NOT EXISTS (SELECT 1 FROM dbo.tblProductoDG WHERE CodigoDG = N'PRD-003')
-    INSERT INTO dbo.tblProductoDG (CodigoDG, NombreDG, PrecioDG, StockDG) VALUES (N'PRD-003', N'Tablet Grafica', 85.50, 40);
+    INSERT INTO dbo.tblProductoDG (CodigoDG, NombreDG, PrecioDG, StockDG) VALUES (N'PRD-003', N'Tablet Gráfica', 85.50, 40);
 GO
 
 SELECT IdProductoDG, CodigoDG, NombreDG, PrecioDG, StockDG FROM dbo.tblProductoDG ORDER BY CodigoDG;
